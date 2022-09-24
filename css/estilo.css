@@ -120,67 +120,65 @@ main section div .container .row {
   main section div .container .row .img-thumbnail {
     margin: 10px; }
 
-.cont {
+footer {
   width: 100%;
-  padding: 10px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 20px; }
-  footer .div3 {
-    text-align: center;
-    justify-content: center;
-    margin-top: 20px; }
-    footer .div3 a i {
-      opacity: .5;
-      transform: scale(1);
-      font-size: 50px;
-      padding: 10px;
+  padding: 10px; }
+  footer .cont {
+    display: grid;
+    justify-items: center; }
+    footer .cont .div3 {
+      text-align: center;
+      justify-content: center;
+      margin-top: 20px; }
+      footer .cont .div3 a i {
+        opacity: .5;
+        transform: scale(1);
+        font-size: 50px;
+        padding: 10px;
+        margin: 30px; }
+        footer .cont .div3 a i:hover {
+          opacity: 1;
+          transform: scale(1.5);
+          transition: all 2s ease; }
+      footer .cont .div3 .follow {
+        font-family: "Abril Fatface", cursive;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 10px; }
+    footer .cont .div4 {
       margin: 30px; }
-      footer .div3 a i:hover {
-        opacity: 1;
-        transform: scale(1.5);
-        transition: all 2s ease; }
-    footer .div3 .follow {
-      font-family: "Abril Fatface", cursive;
-      font-style: italic;
-      font-size: 20px;
-      line-height: 20px;
-      padding: 10px; }
-  footer .div4 {
-    margin: 30px; }
-    footer .div4 .copy {
-      font-family: "Abril Fatface", cursive;
-      font-style: italic;
-      font-size: 15px;
+      footer .cont .div4 .copy {
+        font-family: "Abril Fatface", cursive;
+        font-style: italic;
+        font-size: 15px;
+        text-align: center; }
+      footer .cont .div4 h5 {
+        font-family: "Arvo", serif;
+        font-size: 1rem;
+        text-align: center;
+        padding: 15px;
+        border: #002B5B solid;
+        border-style: double;
+        margin: 30px; }
+    footer .cont .div5 {
       text-align: center; }
-    footer .div4 h5 {
-      font-family: "Arvo", serif;
-      font-size: 1rem;
-      text-align: center;
-      padding: 15px;
-      border: #002B5B solid;
-      border-style: double;
-      margin: 30px; }
-  footer .div5 {
-    text-align: center; }
-    footer .div5 .contacto {
-      font-family: "Abril Fatface", cursive;
-      font-style: italic;
-      font-size: 1rem;
-      text-align: center;
-      line-height: 20px;
-      border-style: dotted; }
-      footer .div5 .contacto .tel {
-        width: 30px; }
-    footer .div5 .img2 {
-      width: 170px;
-      border-radius: 80%;
-      border: 4px;
-      border-style: groove;
-      margin-top: 20px;
-      margin-bottom: 20px; }
+      footer .cont .div5 .contacto {
+        font-family: "Abril Fatface", cursive;
+        font-style: italic;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 20px;
+        border-style: dotted; }
+        footer .cont .div5 .contacto .tel {
+          width: 30px; }
+      footer .cont .div5 .img2 {
+        width: 170px;
+        border-radius: 80%;
+        border: 4px;
+        border-style: groove;
+        margin-top: 20px;
+        margin-bottom: 20px; }
 
 /*<media>*/
 @media screen and (max-width: 426px) {
@@ -225,7 +223,11 @@ main section div .container .row {
   .img-thumbnail {
     width: 95%; }
   footer {
+    width: 100%;
+    padding: 10px; }
+  .cont {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 20px; } }

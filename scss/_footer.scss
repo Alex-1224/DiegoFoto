@@ -1,12 +1,9 @@
 footer{
-    .cont{
-        width: 100%;
+           width: 100%;
         padding: 10px;
+    .cont{
         display: grid;
         justify-items: center;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 20px;
         .div3{
             text-align: center;
             justify-content: center;
