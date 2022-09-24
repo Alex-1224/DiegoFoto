@@ -1,0 +1,48 @@
+/*<media>*/
+@media screen and (max-width: 426px) {
+    header section {
+      display: grid;
+      flex-direction: column;
+      justify-content: space-around; }
+    .div1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between; }
+    h2 {
+      width: 350px;
+      color: #8FE3CF;
+      font-family: 'Arvo', serif;
+      font-style: italic;
+      font-size: 2rem;
+      text-align: center;
+      padding: 1px; }
+    .menu {
+      width: 95vw;
+      display: flex;
+      background: #3ffbb0;
+      background: linear-gradient(96deg, rgba(63, 251, 176, 0.829867) 0%, #20b0fa 100%);
+      text-align: center;
+      border-style: dashed;
+      border-radius: 20%;
+      justify-content: center;
+      padding-left: 0px;
+      flex-wrap: wrap; }
+    .menu li a {
+      width: auto;
+      color: #256D85;
+      font-family: 'Arvo', serif;
+      font-style: italic;
+      font-size: 0.8rem;
+      text-decoration: none; }
+    .img-thumbnail {
+      width: 95%; }
+    footer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 20px; }
+}

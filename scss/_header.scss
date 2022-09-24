@@ -1,0 +1,115 @@
+/*header*/
+body {
+    background-image: url(../imagenes/fondo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(4px); 
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+header{
+    .h1{
+        background-color: $sub;
+        color: $tit;
+        font-family: $font_tit;
+        font-style: italic;
+        font-size: 2rem;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: underline;
+        padding: 20px;
+        border: 10px #ffffff solid;
+        margin: 30px;
+        animation-duration: 10s;
+        animation-name: h1;
+        animation-iteration-count: infinite;
+    @keyframes h1 {
+        0% {
+            opacity: 0;
+            }
+        50% {
+            opacity: 1;
+            }
+        100% {
+          opacity: 1;
+            }
+    }}
+    .section1{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        .div1{
+            display: flex;
+            align-items: center;
+            .animate__bounce{
+                    display: inline-block;
+                    margin: 30px;
+                    animation: bounce;
+                    animation-duration: 4s;
+                }
+                 .animate__tada{
+                    width: auto;
+                    display: inline-block;
+                    animation: tada;
+                    animation-duration: 4s;
+                    color: $log;
+                }
+            .img1{
+                width: 300px;
+                border-radius: 20%;
+                border-style: ridge;
+                padding: 20px;
+                margin: 20px;
+            }
+            h2{
+                width: 500px;
+                font-family: $font_tit;
+                font-style: italic;
+                font-size: 2rem;
+                padding: 10px;
+            }
+        }
+        nav{
+            .menu{
+                display: flex;
+                list-style-type: none;
+                background: rgb(63,251,176);
+                background: linear-gradient(96deg, rgba(63,251,176,0.8298669809720763) 0%, rgba(32,176,250,1) 100%);
+                text-align: center;
+                align-items: center;
+                border-radius: 30%;
+                border-style: dashed;
+                padding-left: 0px;
+                li{
+                    background-color: #14b6da;
+                    display: inline-block;
+                    border-radius: 30%;
+                    padding: 10px;
+                    margin: 10px;
+                    a{
+                        transition: background-color 1s;
+                        color: #256D85;
+                        font-family: 'Arvo', serif;
+                        font-style: italic;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        &:hover{
+                            background-color: $sub;
+                            color: #000000;
+                            font-weight: bold;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+}
