@@ -120,7 +120,7 @@ main section div .container .row {
   main section div .container .row .img-thumbnail {
     margin: 10px; }
 
-footer {
+.cont {
   width: 100%;
   padding: 10px;
   display: grid;

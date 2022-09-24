@@ -1,4 +1,5 @@
 footer{
+    .cont{
         width: 100%;
         padding: 10px;
         display: grid;
@@ -8,8 +9,8 @@ footer{
         grid-column-gap: 20px;
         .div3{
             text-align: center;
-              justify-content: center;
-                margin-top: 20px;
+            justify-content: center;
+            margin-top: 20px;
             a{
                 i{
                     opacity: .5;
@@ -18,58 +19,59 @@ footer{
                     padding: 10px;
                     margin: 30px;
                     &:hover{
-                        opacity: 1;
-                        transform: scale(1.5);
-                        transition: all 2s ease;
+                    opacity: 1;
+                    transform: scale(1.5);
+                    transition: all 2s ease;
                     }
                 }
             }
             .follow{
-                font-family: $font_tit;
-                font-style: italic;
-                font-size: 20px;
-                line-height: 20px;
-                padding: 10px;
+            font-family: $font_tit;
+            font-style: italic;
+            font-size: 20px;
+            line-height: 20px;
+            padding: 10px;
             }
         }
         .div4{
             margin: 30px;
             .copy{
                 font-family: $font_tit;
-                  font-style: italic;
-                 font-size: 15px;
-                 text-align: center;
+                font-style: italic;
+                font-size: 15px;
+                text-align: center;
             }
             h5{
                 font-family: $font_sub;
-                 font-size: 1rem;
-                  text-align: center;
-                  padding: 15px;
-                 border: $tit solid;
-                 border-style: double;
-                  margin: 30px;
+                font-size: 1rem;
+                text-align: center;
+                padding: 15px;
+                border: $tit solid;
+                border-style: double;
+                margin: 30px;
             }
         }
         .div5{
             text-align: center;
             .contacto{
-                font-family: $font_tit;
-                font-style: italic;
-                font-size: 1rem;
-                text-align: center;
-                line-height: 20px;
-                border-style: dotted;
+            font-family: $font_tit;
+            font-style: italic;
+            font-size: 1rem;
+            text-align: center;
+            line-height: 20px;
+            border-style: dotted;
                 .tel{
                     width: 30px;
                 }
             }
             .img2{
-                width: 170px;
-                border-radius: 80%;
-                border: 4px;
-                border-style: groove;
-                margin-top: 20px;
-                margin-bottom: 20px;
+            width: 170px;
+            border-radius: 80%;
+            border: 4px;
+            border-style: groove;
+            margin-top: 20px;
+            margin-bottom: 20px;
             }
         }
+    }    
 }
