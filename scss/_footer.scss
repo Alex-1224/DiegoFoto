@@ -1,9 +1,12 @@
 footer{
-           width: 100%;
+        width: 100%;
         padding: 10px;
     .cont{
         display: grid;
         justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
         .div3{
             text-align: center;
             justify-content: center;
@@ -23,20 +26,18 @@ footer{
                 }
             }
             .follow{
-            font-family: $font_tit;
-            font-style: italic;
-            font-size: 20px;
-            line-height: 20px;
-            padding: 10px;
+                @include color($defecto);
+
+                font-size: 20px;
+                line-height: 20px;
             }
         }
         .div4{
             margin: 30px;
             .copy{
-                font-family: $font_tit;
-                font-style: italic;
+                @include color($defecto);
+
                 font-size: 15px;
-                text-align: center;
             }
             h5{
                 font-family: $font_sub;
@@ -51,8 +52,8 @@ footer{
         .div5{
             text-align: center;
             .contacto{
-            font-family: $font_tit;
-            font-style: italic;
+            @include color($defecto);
+
             font-size: 1rem;
             text-align: center;
             line-height: 20px;
@@ -62,12 +63,12 @@ footer{
                 }
             }
             .img2{
-            width: 170px;
-            border-radius: 80%;
-            border: 4px;
-            border-style: groove;
-            margin-top: 20px;
-            margin-bottom: 20px;
+                width: 170px;
+                border-radius: 80%;
+                border: 4px;
+                border-style: groove;
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
         }
     }    

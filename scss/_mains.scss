@@ -3,12 +3,9 @@ main{
     section{
         div{
             h3{ 
-                font-family: $font_tit;
-                font-style: italic;
-                color: $tit;
+                @include color($col2);
+
                 font-size: 2rem;
-                text-align: center;
-                padding: 20px;
                 margin: 20px;}
             .container{
                 .row{
@@ -16,6 +13,32 @@ main{
                     align-items: center;
                     .img-thumbnail{
                         margin: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*main 4*/
+main{
+    .section2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            @include color($col2);
+
+            font-size: 2rem;
+            margin: 20px;
+        }
+        .row_v{
+            list-style: none;
+            .col{
+                li{
+                    iframe{
+                        width: 400px;
+                        height: 300px;
                     }
                 }
             }

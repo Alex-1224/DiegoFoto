@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/*variables*/ /*header*/
+/*header*/
 body {
   background-image: url(../imagenes/fondo.png);
   background-size: 100% 100%;
@@ -28,7 +28,7 @@ footer {
 
 header .h1 {
   background-color: #8FE3CF;
-  color: #002B5B;
+  color: #256D85;
   font-family: "Abril Fatface", cursive;
   font-style: italic;
   font-size: 2rem;
@@ -158,49 +158,164 @@ main section div .container .row .img-thumbnail {
   margin: 10px;
 }
 
+/*main 2*/
+main section h3 b {
+  width: 500px;
+  color: #256D85;
+  font-family: "Abril Fatface", cursive;
+  font-style: italic;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+main section h3 em {
+  display: flex;
+  justify-content: center;
+  color: #8FE3CF;
+  font-size: 30px;
+  font-family: "Arvo", serif;
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
+}
+
+main section p i {
+  display: flex;
+  color: #002B5B;
+  font-size: 30px;
+  font-family: "Arvo", serif;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+/*main 3*/
+article p a {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  border: 5px;
+  border-style: groove;
+  display: flex;
+  justify-content: center;
+}
+
+article div a {
+  font-size: 2rem;
+  display: flex;
+}
+
+.id {
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 20px;
+}
+
+/*main 4*/
+main .section2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+main .section2 h3 {
+  font-family: "Abril Fatface", cursive;
+  font-style: italic;
+  color: #002B5B;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+main .section2 .row_v {
+  list-style: none;
+}
+main .section2 .row_v .col li iframe {
+  width: 400px;
+  height: 300px;
+}
+
+/*main 5*/
+fieldset {
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+}
+
+fieldset h3 {
+  line-height: 3rem;
+  margin: 30px;
+}
+
+fieldset h3 b {
+  background-color: #66cdaa;
+  width: 500px;
+  color: #256D85;
+  font-family: "Abril Fatface", cursive;
+  font-style: italic;
+  font-size: 2rem;
+  padding: 10px;
+  border-style: solid;
+}
+
+label {
+  display: inline-block;
+  margin: 10px;
+  border-style: inset;
+}
+
+input {
+  line-height: 25px;
+}
+
 footer {
   width: 100%;
   padding: 10px;
+}
+footer .cont {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 20px;
 }
-footer .div3 {
+footer .cont .div3 {
   text-align: center;
   justify-content: center;
   margin-top: 20px;
 }
-footer .div3 a i {
+footer .cont .div3 a i {
   opacity: 0.5;
   transform: scale(1);
   font-size: 50px;
   padding: 10px;
   margin: 30px;
 }
-footer .div3 a i:hover {
+footer .cont .div3 a i:hover {
   opacity: 1;
   transform: scale(1.5);
   transition: all 2s ease;
 }
-footer .div3 .follow {
+footer .cont .div3 .follow {
   font-family: "Abril Fatface", cursive;
   font-style: italic;
   font-size: 20px;
   line-height: 20px;
   padding: 10px;
 }
-footer .div4 {
+footer .cont .div4 {
   margin: 30px;
 }
-footer .div4 .copy {
+footer .cont .div4 .copy {
   font-family: "Abril Fatface", cursive;
   font-style: italic;
   font-size: 15px;
   text-align: center;
 }
-footer .div4 h5 {
+footer .cont .div4 h5 {
   font-family: "Arvo", serif;
   font-size: 1rem;
   text-align: center;
@@ -209,10 +324,10 @@ footer .div4 h5 {
   border-style: double;
   margin: 30px;
 }
-footer .div5 {
+footer .cont .div5 {
   text-align: center;
 }
-footer .div5 .contacto {
+footer .cont .div5 .contacto {
   font-family: "Abril Fatface", cursive;
   font-style: italic;
   font-size: 1rem;
@@ -220,10 +335,10 @@ footer .div5 .contacto {
   line-height: 20px;
   border-style: dotted;
 }
-footer .div5 .contacto .tel {
+footer .cont .div5 .contacto .tel {
   width: 30px;
 }
-footer .div5 .img2 {
+footer .cont .div5 .img2 {
   width: 170px;
   border-radius: 80%;
   border: 4px;
@@ -281,8 +396,13 @@ footer .div5 .img2 {
     width: 95%;
   }
   footer {
+    width: 100%;
+    padding: 10px;
+  }
+  .cont {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
   }

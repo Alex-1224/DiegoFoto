@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-/*variables*/
 /*header*/
 body {
   background-image: url(../imagenes/fondo.png);
@@ -23,12 +22,13 @@ footer {
 
 header .h1 {
   background-color: #8FE3CF;
-  color: #002B5B;
+  color: #256D85;
   font-family: "Abril Fatface", cursive;
   font-style: italic;
+  text-align: center;
+  padding: 10px;
   font-size: 2rem;
   line-height: 40px;
-  text-align: center;
   text-decoration: underline;
   padding: 20px;
   border: 10px #ffffff solid;
@@ -71,11 +71,13 @@ header .section1 {
       padding: 20px;
       margin: 20px; }
     header .section1 .div1 h2 {
-      width: 500px;
+      color: #002B5B;
       font-family: "Abril Fatface", cursive;
       font-style: italic;
-      font-size: 2rem;
-      padding: 10px; }
+      text-align: center;
+      padding: 10px;
+      width: 500px;
+      font-size: 2rem; }
   header .section1 nav .menu {
     display: flex;
     list-style-type: none;
@@ -95,23 +97,31 @@ header .section1 {
       header .section1 nav .menu li a {
         transition: background-color 1s;
         color: #256D85;
-        font-family: 'Arvo', serif;
+        font-family: "Abril Fatface", cursive;
         font-style: italic;
+        text-align: center;
+        padding: 10px;
+        font-family: "Arvo", serif;
         font-size: 1rem;
         text-decoration: none; }
         header .section1 nav .menu li a:hover {
+          border-radius: 30%;
           background-color: #8FE3CF;
           color: #000000;
+          font-family: "Abril Fatface", cursive;
+          font-style: italic;
+          text-align: center;
+          padding: 10px;
           font-weight: bold; }
 
 /*main 1*/
 main section div h3 {
+  color: #002B5B;
   font-family: "Abril Fatface", cursive;
   font-style: italic;
-  color: #002B5B;
-  font-size: 2rem;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  font-size: 2rem;
   margin: 20px; }
 
 main section div .container .row {
@@ -120,12 +130,35 @@ main section div .container .row {
   main section div .container .row .img-thumbnail {
     margin: 10px; }
 
+/*main 4*/
+main .section2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; }
+  main .section2 h3 {
+    color: #002B5B;
+    font-family: "Abril Fatface", cursive;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    margin: 20px; }
+  main .section2 .row_v {
+    list-style: none; }
+    main .section2 .row_v .col li iframe {
+      width: 400px;
+      height: 300px; }
+
 footer {
   width: 100%;
   padding: 10px; }
   footer .cont {
     display: grid;
-    justify-items: center; }
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px; }
     footer .cont .div3 {
       text-align: center;
       justify-content: center;
@@ -141,18 +174,22 @@ footer {
           transform: scale(1.5);
           transition: all 2s ease; }
       footer .cont .div3 .follow {
+        color: #000000;
         font-family: "Abril Fatface", cursive;
         font-style: italic;
+        text-align: center;
+        padding: 10px;
         font-size: 20px;
-        line-height: 20px;
-        padding: 10px; }
+        line-height: 20px; }
     footer .cont .div4 {
       margin: 30px; }
       footer .cont .div4 .copy {
+        color: #000000;
         font-family: "Abril Fatface", cursive;
         font-style: italic;
-        font-size: 15px;
-        text-align: center; }
+        text-align: center;
+        padding: 10px;
+        font-size: 15px; }
       footer .cont .div4 h5 {
         font-family: "Arvo", serif;
         font-size: 1rem;
@@ -164,8 +201,11 @@ footer {
     footer .cont .div5 {
       text-align: center; }
       footer .cont .div5 .contacto {
+        color: #000000;
         font-family: "Abril Fatface", cursive;
         font-style: italic;
+        text-align: center;
+        padding: 10px;
         font-size: 1rem;
         text-align: center;
         line-height: 20px;
@@ -197,7 +237,11 @@ footer {
   h2 {
     width: 350px;
     color: #8FE3CF;
-    font-family: 'Arvo', serif;
+    font-family: "Abril Fatface", cursive;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    font-family: "Arvo", serif;
     font-style: italic;
     font-size: 2rem;
     text-align: center;
@@ -216,7 +260,11 @@ footer {
   .menu li a {
     width: auto;
     color: #256D85;
-    font-family: 'Arvo', serif;
+    font-family: "Abril Fatface", cursive;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    font-family: "Arvo", serif;
     font-style: italic;
     font-size: 0.8rem;
     text-decoration: none; }
@@ -225,7 +273,7 @@ footer {
   footer {
     width: 100%;
     padding: 10px; }
-  .cont {
+  footer .cont {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;

@@ -18,12 +18,11 @@ footer {
 header{
     .h1{
         background-color: $sub;
-        color: $tit;
-        font-family: $font_tit;
-        font-style: italic;
+
+        @include color ($col1);
+
         font-size: 2rem;
         line-height: 40px;
-        text-align: center;
         text-decoration: underline;
         padding: 20px;
         border: 10px #ffffff solid;
@@ -71,11 +70,10 @@ header{
                 margin: 20px;
             }
             h2{
+                @include color($col2);
+
                 width: 500px;
-                font-family: $font_tit;
-                font-style: italic;
                 font-size: 2rem;
-                padding: 10px;
             }
         }
         nav{
@@ -97,14 +95,16 @@ header{
                     margin: 10px;
                     a{
                         transition: background-color 1s;
-                        color: #256D85;
-                        font-family: 'Arvo', serif;
-                        font-style: italic;
+
+                        @include color($col1);
+
+                        font-family: $font_sub;
                         font-size: 1rem;
                         text-decoration: none;
                         &:hover{
+                            border-radius: 30%;
                             background-color: $sub;
-                            color: #000000;
+                            @include color($defecto);
                             font-weight: bold;
                         }
                     }

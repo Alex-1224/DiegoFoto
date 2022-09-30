@@ -1,6 +1,19 @@
-/*variables*/
 $log: #256D85;
 $tit: #002B5B;
 $sub: #8FE3CF;
+
 $font_tit: 'Abril Fatface', cursive;
 $font_sub: 'Arvo', serif;
+
+$col1: #256D85;
+$col2: #002B5B;
+$col3: #8FE3CF;
+$defecto: #000000;
+
+@mixin color ($tipo) {
+    color: $tipo;
+    font-family: $font_tit;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
