@@ -130,6 +130,63 @@ main section div .container .row {
   main section div .container .row .img-thumbnail {
     margin: 10px; }
 
+/*main 2*/
+main section h3 b {
+  width: 500px;
+  color: #256D85;
+  font-family: "Abril Fatface", cursive;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem; }
+
+main section h3 em {
+  display: flex;
+  justify-content: center;
+  color: #8FE3CF;
+  font-family: "Abril Fatface", cursive;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  font-family: "Arvo", serif;
+  margin: 30px; }
+
+main section p i {
+  display: flex;
+  color: #002B5B;
+  font-family: "Abril Fatface", cursive;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  font-family: "Arvo", serif;
+  margin: 20px; }
+
+/*main 3*/
+main section article div p a {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: wavy;
+  border: 5px;
+  border-style: groove;
+  display: flex;
+  justify-content: center; }
+
+main section article div a {
+  font-size: 2rem;
+  display: flex; }
+
+main section article .id {
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 20px; }
+
 /*main 4*/
 main .section2 {
   display: flex;
@@ -149,6 +206,31 @@ main .section2 {
     main .section2 .row_v .col li iframe {
       width: 400px;
       height: 300px; }
+
+/*main 5*/
+main section fieldset {
+  padding: 15px;
+  margin: 20px;
+  text-align: center; }
+  main section fieldset h3 {
+    line-height: 3rem;
+    margin: 30px; }
+    main section fieldset h3 b {
+      background-color: #66cdaa;
+      width: 500px;
+      color: #256D85;
+      font-family: "Abril Fatface", cursive;
+      font-style: italic;
+      text-align: center;
+      padding: 10px;
+      font-size: 2rem;
+      border-style: solid; }
+  main section fieldset form label {
+    display: inline-block;
+    margin: 10px;
+    border-style: inset; }
+  main section fieldset form input {
+    line-height: 25px; }
 
 footer {
   width: 100%;
@@ -207,7 +289,6 @@ footer {
         text-align: center;
         padding: 10px;
         font-size: 1rem;
-        text-align: center;
         line-height: 20px;
         border-style: dotted; }
         footer .cont .div5 .contacto .tel {
